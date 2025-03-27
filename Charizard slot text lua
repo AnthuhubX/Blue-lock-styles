@@ -1,0 +1,9 @@
+local st = player.PlayerGui:WaitForChild("Style").BG.StyleTxt
+local Slot = player.PlayerGui.Style.BG.Slots.ScrollingFrame.Slot1.Text
+local des = player.PlayerGui.Style.BG.Desc
+
+st.Text = "Charizard"
+st.TextColor3 = Color3.fromRGB(255, 165, 0) -- Orange
+Slot.Text = "Charizard"
+Slot.TextColor3 = Color3.fromRGB(255, 165, 0) -- Orange
+des.Text = "Charizard style is about power and speed. It's all fire and force, just charging through with unstoppable energy. Every move is intense and leaves a lasting impact."
