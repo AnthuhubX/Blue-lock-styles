@@ -153,7 +153,7 @@ local function performBlazingRush()
 
     -- Activate speed boost
     StatesController.OwnWalkState = true
-    StatesController.SpeedBoost = 40
+    StatesController.SpeedBoost = 30
     displayAbilityText("Blazing Rush", 2)
 
     -- Reset after 10 seconds
