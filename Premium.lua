@@ -126,7 +126,7 @@ local StyleTextBox = AddTextBox(StyleFlowTab, {
 })
 
 AddButton(StyleFlowTab, {
-    Name = "Get the Style",
+    Name = "Get the Style (reo needed)",
     Callback = function()
         if styleId and styleId ~= "" then
             set_style(styleId)
