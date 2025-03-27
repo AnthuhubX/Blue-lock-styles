@@ -193,3 +193,11 @@ AddButton(CustomStylesTab, {
     end,
     Color = Color3.fromRGB(0, 255, 255)
 })
+
+AddButton(CustomStylesTab, {
+    Name = "charizard style🔥",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthuhubX/Blue-lock-styles/refs/heads/main/Charizard.lua"))()
+    end,
+    Color = Color3.fromRGB(0, 255, 255)
+})
