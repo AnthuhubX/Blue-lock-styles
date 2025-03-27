@@ -1,7 +1,0 @@
-local co1 = coroutine.create(runScript)
-    local co2 = coroutine.create(runScript)
-    
-    coroutine.resume(co1, "https://raw.githubusercontent.com/AnthuhubX/Blue-lock-styles/refs/heads/main/Charizard.lua")
-    coroutine.resume(co2, "https://raw.githubusercontent.com/AnthuhubX/Blue-lock-styles/refs/heads/main/Charizard%20slot%20text%20lua")
-  end
-})
