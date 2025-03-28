@@ -179,7 +179,7 @@ AddButton(CosmeticsTab, {
 local CustomStylesTab = MakeTab({Name = "Custom Styles Premium"})
 
 AddButton(CustomStylesTab, {
-    Name = "overtaker style",
+    Name = "undertaker style",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthuhubX/Main/refs/heads/main/Undertaker"))()
     end,
