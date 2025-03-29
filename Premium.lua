@@ -213,7 +213,14 @@ AddButton(CustomStylesTab, {
     Color = Color3.fromRGB(0, 255, 255)
 })
 
-
+local TrollTab = MakeTab({Name = "Troll"})
+AddButton(TrollTab, {
+    Name = "REF HES KILLING PEOPLE (client sided)",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Grab-knife-v4-24753"))()
+    end,
+    Color = Color3.fromRGB(255, 0, 0)
+})
 
 local OthersTab = MakeTab({Name = "Others Made by Xlz"})
 AddButton(OthersTab, {
