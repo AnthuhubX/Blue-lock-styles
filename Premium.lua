@@ -212,3 +212,28 @@ AddButton(CustomStylesTab, {
     end,
     Color = Color3.fromRGB(0, 255, 255)
 })
+
+
+
+local OthersTab = MakeTab({Name = "Others Made by Xlz"})
+AddButton(OthersTab, {
+    Name = "HB Expand Made by Xlz",
+    Callback = function()
+        local hitboxEnabled = false
+        local hitboxSize = Vector3.new(12, 12, 12)
+        local ballSize = Vector3.new(15, 15, 15)
+        local function updateHitboxes()
+            for _, otherPlayer in pairs(game.Players:GetPlayers()) do
+                if otherPlayer ~= game.Players.LocalPlayer and otherPlayer.Character then
+                    local hitbox = otherPlayer.Character:FindFirstChild("HumanoidRootPart")
+                    if hitbox then
+                        hitbox.Size = hitboxEnabled and hitboxSize or Vector3.new(2, 2, 1)
+                        hitbox.Transparency = hitboxEnabled and 0.5 or 1
+                        hitbox.Material = hitboxEnabled and Enum.Material.ForceField or Enum.Material.Plastic
+                    end
+                end
+            end
+        end
+    end,
+    Color = Color3.fromRGB(0, 153, 76)
+})
