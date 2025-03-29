@@ -17,7 +17,7 @@ local whitelist = {
     ["ShadIsBetterThanYou"] = true,
     ["TooBlindd"] = true,
     ["Broiamongs"] = true,
-    ["broiamon"] = true
+    ["Broiamon"] = true
 }
 
 if not whitelist[player.Name] then
