@@ -203,3 +203,11 @@ AddButton(CustomStylesTab, {
     end,
     Color = Color3.fromRGB(0, 255, 255)
 })
+
+AddButton(CustomStylesTab, {
+    Name = "JK style",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthuhubX/Blue-lock-styles/refs/heads/main/Jkstyle.lua"))()
+    end,
+    Color = Color3.fromRGB(0, 255, 255)
+})
