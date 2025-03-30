@@ -12,7 +12,7 @@ local StatesController = Knit.GetController("StatesController")
 
 -- VFX Assets
 local runVFX = ReplicatedStorage.Effects.KaiserImpact.Start.Start
-local ravageVFX = ReplicatedStorage.Effects.KaiserImpact.Start.Start
+local ravageVFX = ReplicatedStorage.Effects.KaiserImpact.End.End.End
 local dribbleVFX = {
     ReplicatedStorage.Effects.KaiserVolley.Start.Start,
     ReplicatedStorage.Effects.KaiserVolley.End.End.Attachment,
