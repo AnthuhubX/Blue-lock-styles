@@ -69,7 +69,7 @@ MinimizeButton({
 local Main = MakeTab({Name = "INFO"})
 AddImageLabel(Main, {
     Name = "Neon Hub premium",
-    Image = "rbxassetid://17409640914"
+    Image = "rbxassetid://14389031238"
 })
 AddParagraph(Main, {"More Games Getting Supported Soon"})
 
