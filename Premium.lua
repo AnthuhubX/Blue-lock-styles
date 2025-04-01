@@ -74,10 +74,10 @@ AddImageLabel(Main, {
 })
 AddParagraph(Main, {"More Games Getting Supported Soon"})
 
-local ScriptsTab = MakeTab({Name = "Misc"})
+local ScriptsTab = MakeTab({Name = "Scripts"})
 
 AddButton(ScriptsTab, {
-    Name = "No CD",
+    Name = "Ball control",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/nocturnal631/Main/refs/heads/main/Control%20ball%20script"))()
     end,
