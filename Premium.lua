@@ -23,7 +23,7 @@ local whitelist = {
     ["Lynwooo"] = true,
     ["Ramo_akh1"] = true,
     ["Soulshubfan"] = true,
-    ["nugifihack"] = true
+    ["Nugifihack"] = true
 }
 
 if not whitelist[player.Name] then
@@ -73,6 +73,16 @@ AddImageLabel(Main, {
     Image = "rbxassetid://14389031238"
 })
 AddParagraph(Main, {"More Games Getting Supported Soon"})
+
+local ScriptsTab = MakeTab({Name = "Misc"})
+
+AddButton(ScriptsTab, {
+    Name = "No CD",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nocturnal631/Main/refs/heads/main/Control%20ball%20script"))()
+    end,
+    Color = Color3.fromRGB(0, 102, 255)
+})
 
 local MiscTab = MakeTab({Name = "Misc"})
 
