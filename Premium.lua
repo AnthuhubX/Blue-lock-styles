@@ -196,7 +196,7 @@ AddButton(CosmeticsTab, {
 local CustomStylesTab = MakeTab({Name = "Custom Styles Premium"})
 
 AddButton(CustomStylesTab, {
-    Name = "undertaker style",
+    Name = "Undertaker style",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthuhubX/Main/refs/heads/main/Undertaker"))()
     end,
@@ -212,7 +212,7 @@ AddButton(CustomStylesTab, {
 })
 
 AddButton(CustomStylesTab, {
-    Name = "charizard style🔥",
+    Name = "Charizard style🔥",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthuhubX/Blue-lock-styles/refs/heads/main/Charizard.lua"))()
     end,
@@ -231,6 +231,14 @@ AddButton(CustomStylesTab, {
     Name = "Douma style",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthuhubX/Blue-lock-styles/refs/heads/main/Douma"))()
+    end,
+    Color = Color3.fromRGB(0, 255, 255)
+})
+
+AddButton(CustomStylesTab, {
+    Name = Goku style (key is SONGOKU)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/stylemakeritosh/Ace/refs/heads/main/GoatKu"))()
     end,
     Color = Color3.fromRGB(0, 255, 255)
 })
