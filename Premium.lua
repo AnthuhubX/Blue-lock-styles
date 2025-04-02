@@ -236,7 +236,7 @@ AddButton(CustomStylesTab, {
 })
 
 AddButton(CustomStylesTab, {
-    Name = Goku style (key is SONGOKU)",
+    Name = "Goku style (key is SONGOKU)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/stylemakeritosh/Ace/refs/heads/main/GoatKu"))()
     end,
