@@ -184,16 +184,6 @@ AddButton(StyleFlowTab, {
     end
 })
 
-local CosmeticsTab = MakeTab({Name = "Cosmetics"})
-
-AddButton(CosmeticsTab, {
-    Name = "Dragon Cape (not working)",
-    Callback = function()
-        cloneref(game:GetService("ReplicatedStorage")).Packages.Knit.Services.CustomizationService.RE.Customize:FireServer("Cosmetics", "Dragon Cape")
-    end,
-    Color = Color3.fromRGB(0, 204, 255)
-})
-
 local CustomStylesTab = MakeTab({Name = "Custom Styles Premium"})
 
 AddButton(CustomStylesTab, {
@@ -242,36 +232,4 @@ AddButton(CustomStylesTab, {
         loadstring(game:HttpGet("https://raw.githubusercontent.com/stylemakeritosh/Ace/refs/heads/main/GoatKu"))()
     end,
     Color = Color3.fromRGB(0, 255, 255)
-})
-
-local TrollTab = MakeTab({Name = "Troll"})
-AddButton(TrollTab, {
-    Name = "REF HES KILLING PEOPLE (client sided)",
-    Callback = function()
-        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Grab-knife-v4-24753"))()
-    end,
-    Color = Color3.fromRGB(255, 0, 0)
-})
-
-local OthersTab = MakeTab({Name = "Others Made by Xlz"})
-AddButton(OthersTab, {
-    Name = "HB Expand Made by Xlz",
-    Callback = function()
-        local hitboxEnabled = false
-        local hitboxSize = Vector3.new(12, 12, 12)
-        local ballSize = Vector3.new(15, 15, 15)
-        local function updateHitboxes()
-            for _, otherPlayer in pairs(game.Players:GetPlayers()) do
-                if otherPlayer ~= game.Players.LocalPlayer and otherPlayer.Character then
-                    local hitbox = otherPlayer.Character:FindFirstChild("HumanoidRootPart")
-                    if hitbox then
-                        hitbox.Size = hitboxEnabled and hitboxSize or Vector3.new(2, 2, 1)
-                        hitbox.Transparency = hitboxEnabled and 0.5 or 1
-                        hitbox.Material = hitboxEnabled and Enum.Material.ForceField or Enum.Material.Plastic
-                    end
-                end
-            end
-        end
-    end,
-    Color = Color3.fromRGB(0, 153, 76)
 })
