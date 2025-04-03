@@ -23,7 +23,8 @@ local whitelist = {
     ["Lynwooo"] = true,
     ["Ramo_akh1"] = true,
     ["Soulshubfan"] = true,
-    ["Nugifihack"] = true
+    ["Nugifihack"] = true,
+    ["mason64132"] = true
 }
 
 if not whitelist[player.Name] then
