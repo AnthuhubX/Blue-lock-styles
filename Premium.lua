@@ -234,3 +234,11 @@ AddButton(CustomStylesTab, {
     end,
     Color = Color3.fromRGB(0, 255, 255)
 })
+
+AddButton(CustomStylesTab, {
+    Name = "Echo style",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthuhubX/Blue-lock-styles/refs/heads/main/Echo%20style.lua"))()
+    end,
+    Color = Color3.fromRGB(0, 255, 255)
+})
