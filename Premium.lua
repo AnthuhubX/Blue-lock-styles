@@ -228,7 +228,7 @@ AddButton(CustomStylesTab, {
 })
 
 AddButton(CustomStylesTab, {
-    Name = "Goku style (key is SONGOKU)",
+    Name = "Goku style (key: SONGOKU)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/stylemakeritosh/Ace/refs/heads/main/GoatKu"))()
     end,
@@ -239,6 +239,14 @@ AddButton(CustomStylesTab, {
     Name = "Echo style",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthuhubX/Blue-lock-styles/refs/heads/main/Echo%20style.lua"))()
+    end,
+    Color = Color3.fromRGB(0, 255, 255)
+})
+
+AddButton(CustomStylesTab, {
+    Name = "Jinwoo style (key: KINGOFHUMANS)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/stylemakeritosh/Ace/refs/heads/main/Jinwoo"))()
     end,
     Color = Color3.fromRGB(0, 255, 255)
 })
