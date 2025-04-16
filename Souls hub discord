@@ -1,0 +1,92 @@
+-- Create the GUI
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local GetScriptButton = Instance.new("TextButton")
+local CloseButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+
+-- Parent GUI to Player's PlayerGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- ScreenGui Properties
+ScreenGui.Name = "EnhancedScriptGUI"
+ScreenGui.ResetOnSpawn = false
+
+-- Frame Properties
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Frame.Position = UDim2.new(0.5, -150, 0.5, -100)
+Frame.Size = UDim2.new(0, 300, 0, 200)
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+
+UICorner.Parent = Frame
+
+-- Title Properties
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0.3, 0)
+Title.Font = Enum.Font.GothamBold
+Title.Text = "Get Script at Discord Server"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextWrapped = true
+
+-- GetScriptButton Properties
+GetScriptButton.Parent = Frame
+GetScriptButton.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
+GetScriptButton.Size = UDim2.new(0.8, 0, 0.3, 0)
+GetScriptButton.Position = UDim2.new(0.1, 0, 0.5, 0)
+GetScriptButton.Font = Enum.Font.GothamBold
+GetScriptButton.Text = "Get Script"
+GetScriptButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetScriptButton.TextScaled = true
+GetScriptButton.TextWrapped = true
+
+UICorner:Clone().Parent = GetScriptButton
+
+-- UIGradient for Enchanted Effect
+UIGradient.Parent = GetScriptButton
+UIGradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 170, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 85, 255))
+}
+UIGradient.Rotation = 45
+
+-- CloseButton Properties
+CloseButton.Parent = Frame
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+CloseButton.Size = UDim2.new(0.15, 0, 0.15, 0)
+CloseButton.Position = UDim2.new(0.85, 0, 0.05, 0)
+CloseButton.Font = Enum.Font.GothamBold
+CloseButton.Text = "X"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextScaled = true
+CloseButton.TextWrapped = true
+
+UICorner:Clone().Parent = CloseButton
+
+-- Button Functionality for GetScript
+GetScriptButton.MouseButton1Click:Connect(function()
+    setclipboard("https://discord.gg/qnWSe36dTn") -- Copies the Discord link to clipboard
+    GetScriptButton.Text = "Copied!"
+    task.wait(1)
+    GetScriptButton.Text = "Get Script"
+end)
+
+-- Button Functionality for CloseButton
+CloseButton.MouseButton1Click:Connect(function()
+    ScreenGui:Destroy() -- Permanently closes the GUI
+end)
+
+-- Enchanted Effect Animation
+task.spawn(function()
+    while true do
+        for i = 1, 360, 1 do
+            UIGradient.Rotation = i
+            task.wait(0.01)
+        end
+    end
+end)
